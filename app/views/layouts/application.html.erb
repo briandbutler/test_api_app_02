@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title><%= content_for?(:title) ? yield(:title) : "TestApiApp02" %></title>
+    <title><%= content_for?(:title) ? yield(:title) : "BackpackerU" %></title>
     <%= csrf_meta_tags %>
 
     <%= stylesheet_link_tag "application", :media => "all" %>
@@ -45,7 +45,7 @@
           <span class="icon-bar"></span>
           <span class="icon-bar"></span>
         </button>
-        <a class="navbar-brand" href="#">TestApiApp02</a>
+        <a class="navbar-brand" href="http://backpackeru-test-chunks.herokuapp.com/">BackpackerU</a>
         <div class="navbar-collapse collapse navbar-responsive-collapse">
           <ul class="nav navbar-nav">
             <li><%= link_to "Home", root_path %></li>
@@ -54,6 +54,7 @@
             <li><%= link_to "Articles", articles_path %></li>
             <li><%= link_to "Books", books_path %></li>
             <li><%= link_to "Podcasts", podcasts_path %></li>
+            <li><%= link_to "About BackpackerU", about_path %></li>
 
           </ul>
         </div>
@@ -77,6 +78,7 @@
               <li><%= link_to "Articles", articles_path %></li>
               <li><%= link_to "Books", books_path %></li>
               <li><%= link_to "Podcasts", podcasts_path %></li>
+              <li><%= link_to "About BackpackerU", about_path %></li>
             </ul>
           </div><!--/.well -->
         </div><!--/span-->
